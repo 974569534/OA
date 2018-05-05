@@ -18,10 +18,20 @@
     from eamil
     where EamilId = #{eamilid,jdbcType=INTEGER}
   </select>
+  
+  <!-- 查询所有邮件 -->
+  <select id="selectAll">
+  	
+  </select>
+  
+  
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from eamil
     where EamilId = #{eamilid,jdbcType=INTEGER}
   </delete>
+  
+  <!-- 发送一份新邮件 -->
   <insert id="insert" parameterType="org.java.entity.Eamil" >
     insert into eamil (EamilId, Title, EamilContent, 
       FromUserId, IfPublish, RecordTime
