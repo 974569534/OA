@@ -9,26 +9,26 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-
+<style type="text/css">
+	#btn1{
+		margin-top:15px;
+		font-size:15px;
+		
+	}
+	#tab tr th{
+		
+	}			
+</style>
 </head>
 <body>
 	<div class="container">
-
-			<header>
-				<h1>Sticky Table Headers <em>Revisited</em> <span>Creating functional and flexible sticky table headers</span></h1>	
-				<nav class="codrops-demos">
-					<a href="index.html">Basic Usage</a>
-					<a class="current-demo" href="index2.html">Biaxial Headers</a>
-					<a href="index3.html">Wide Tables</a>
-				</nav>
-			</header>
 			<div class="component">
 				<h4>收件箱（共xx消息）</h>
-				<p>The example below has the first cell wrapped in &lt;th&gt; instead of &lt;td&gt;:</p>
-				<table>
+				<div id="btn1"><button>删除</button>&nbsp;&nbsp;<button>转发</button>&nbsp;&nbsp;<button>举报</button>&nbsp;&nbsp;<button>全部标为已读</button>&nbsp;&nbsp;<button>标记为已读邮件</button>&nbsp;&nbsp;</div>
+				<table id="tab">
 					<thead>
 						<tr>
-							<td><input type="checkbox" /></td>
+							<th><input type="checkbox" class="checks" />&nbsp;&nbsp;&nbsp;全选</th>
 							<th>状态</th>
 							<th>发件人</th>
 							<th>主题</th>
@@ -38,14 +38,23 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>52</td>
+							<th><input type="checkbox" class="check"/></th>
 							<td>40</td>
 							<td>9</td>
 							<td>47</td>
 							<td>31</td>
+							<td>31</td>
 						</tr>
 						<tr>
-							<th>Sample #2</th>
+							<th><input type="checkbox" class="check" /></th>
+							<td>27</td>
+							<td>55</td>
+							<td>97</td>
+							<td>52</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<th><input type="checkbox" /></th>
 							<td>27</td>
 							<td>55</td>
 							<td>97</td>
@@ -56,9 +65,18 @@
 				</table>			</div>
 			
 		</div><!-- /container -->
-		<script src="http://img.htmlsucai.com/cdn/jquery/jquery-1.10.2.js"></script>
+		<script src="js/jquery-1.10.1.js"></script>
 		<script src="js/jquery.ba-throttle-debounce.min.js"></script>
 		<script src="js/jquery.stickyheader.js"></script>
 	
+<script type="text/javascript">
+	$(function(){
+		$(".checks").click(function(){
+
+			
+			
+		})
+	});
+</script>	
 </body>
 </html>
