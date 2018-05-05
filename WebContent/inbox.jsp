@@ -19,7 +19,7 @@
 				<table>
 					<thead>
 						<tr>
-							<th><input type="checkbox" style="" />123</th>
+							<th><input type="checkbox" style="" /></th>
 							<th>状态</th>
 							<th>发件人</th>
 							<th>主题</th>
@@ -29,7 +29,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<th>Sample #1</th>
+							<th></th>
 							<td>52</td>
 							<td>40</td>
 							<td>9</td>
