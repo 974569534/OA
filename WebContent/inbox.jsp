@@ -23,13 +23,12 @@
 				</nav>
 			</header>
 			<div class="component">
-				<h2>Biaxial headers</h2>
-				<p>Biaxial headers are possible &mdash; this is for situations where both horizontal and vertical headers are needed.</p>
+				<h4>收件箱（共xx消息）</h>
 				<p>The example below has the first cell wrapped in &lt;th&gt; instead of &lt;td&gt;:</p>
 				<table>
 					<thead>
 						<tr>
-							<th>Sample ID</th>
+							<td><input type="checkbox" /></td>
 							<th>状态</th>
 							<th>发件人</th>
 							<th>主题</th>
