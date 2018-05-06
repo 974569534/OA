@@ -161,4 +161,16 @@
       UserStateId = #{userstateid,jdbcType=INTEGER}
     where UserId = #{userid,jdbcType=VARCHAR}
   </update>
+  
+  <select id="getCount">
+  	select count(*) from userinfo
+  </select>
+  
+  <select id="findAll" resultMap="BaseResultMap">
+  	select 
+	<include refid="Base_Column_List" />
+	from userinfo 
+	limit (#{pageIndex}-1)*#{pageSize},#{pageSize}
+  </select>
+  
 </mapper>
