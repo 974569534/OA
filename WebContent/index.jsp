@@ -44,11 +44,11 @@
                        <li class="email">
                        	<div class="nav-header"><a href="javascript:;"  date-src="home.jsp" class="ue-clear"><span>邮件管理</span><i class="icon"></i></a></div>
                        	 <ul class="subnav">
-                        	<li><a href="javascript:;" date-src="form.jsp">已发送</a></li>
-                            <li><a href="javascript:;" date-src="form.jsp">收件箱</a></li>
-                            <li><a href="javascript:;" date-src="form.jsp">写邮件</a></li>
-                            <li><a href="javascript:;" date-src="form.jsp">已删除</a></li>
-                            <li><a href="javascript:;" date-src="form.jsp">草稿箱</a></li>
+                        	<li><a href="javascript:;" date-src="mail_sent.jsp">已发送</a></li>
+                            <li><a href="javascript:;" date-src="mail_inbox.jsp">收件箱</a></li>
+                            <li><a href="javascript:;" date-src="mail_outbox.jsp">写邮件</a></li>
+                            <li><a href="javascript:;" date-src="mail_deleted.jsp">已删除</a></li>
+                            <li><a href="javascript:;" date-src="mail_draftbox.jsp">草稿箱</a></li>
                         </ul>
                        	
                        </li>

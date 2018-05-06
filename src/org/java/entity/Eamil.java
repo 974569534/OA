@@ -15,7 +15,15 @@ public class Eamil {
 
     private Date recordtime;
 
-    public Integer getEamilid() {
+    @Override
+	public String toString() {
+		return "Eamil [eamilid=" + eamilid + ", title=" + title
+				+ ", eamilcontent=" + eamilcontent + ", fromuserid="
+				+ fromuserid + ", ifpublish=" + ifpublish + ", recordtime="
+				+ recordtime + "]";
+	}
+
+	public Integer getEamilid() {
         return eamilid;
     }
 
