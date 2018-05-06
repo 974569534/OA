@@ -40,6 +40,7 @@
       #{fromuserid,jdbcType=VARCHAR}, #{ifpublish,jdbcType=INTEGER}, #{recordtime,jdbcType=TIMESTAMP}
       )
   </insert>
+  
   <insert id="insertSelective" parameterType="org.java.entity.Eamil" >
     insert into eamil
     <trim prefix="(" suffix=")" suffixOverrides="," >

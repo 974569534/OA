@@ -27,89 +27,56 @@ window.UMEDITOR_HOME_URL = 'umeditor/';  // 请换成绝对路径
     <div id="bd">
     	<div id="main">
             <h2 class="subfild">
-            	<span>基本信息</span>
+            	<span>邮件信息</span>
             </h2>
+            <form action="addEamil.do" method="post" enctype="multipart/form-data">
             <div class="subfild-content base-info">
             	<div class="kv-item ue-clear">
-                	<label><span class="impInfo">*</span>文章标题</label>
+                	<label><span class="impInfo">*</span>收件人</label>
                 	<div class="kv-item-content">
-                    	<input type="text" placeholder="文章标题" />
+                    	<input type="text" name="people" placeholder="收件人" />
                     </div>
-                    <span class="kv-item-tip">标题字数限制在35个字符</span>
+
                 </div>
                 <div class="kv-item ue-clear time">
-                	<label><span class="impInfo">*</span>发布时间</label>
+                	<label><span class="impInfo">*</span>主题</label>
                 	<div class="kv-item-content">
-                    	<input type="text" placeholder="文章标题" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+                    	<input type="text" name="title" placeholder="主题" />
                         <i class="time-icon"></i>
                     </div>
-                    <span class="kv-item-tip error">这是一个错误信息</span>
-                </div>
-                
-                <div class="kv-item ue-clear">
-                	<label>所在栏目</label>
-                	<div class="kv-item-content">
-                    	<select>
-                        	<option>新闻资讯</option>
-                            <option>新闻资讯</option>
-                            <option>新闻资讯</option>
-                        </select>
-                    </div>
-                    <span class="kv-item-tip success">成功信息</span>
-                </div>
-                
-                <div class="kv-item ue-clear">
-                	<label>是否审核</label>
-                	<div class="kv-item-content">
-                    	<span class="choose">
-                            <span class="checkboxouter">
-                                <input type="radio" name="need" />
-                                <span class="radio"></span>
-                            </span>
-                            <span class="text">是</span>
-                        </span>
-                    	<span class="choose">
-                            <span class="checkboxouter">
-                                <input type="radio" name="need" />
-                                <span class="radio"></span>
-                            </span>
-                            <span class="text">否</span>
-                        </span>
-                        
-                    </div>
-                    <span class="kv-item-tip">标题字数限制在35个字符</span>
+
                 </div>
                 
                 
+                
                 <div class="kv-item ue-clear">
-                	<label><span class="impInfo">*</span>缩略图</label>
+                	<label><span class="impInfo">*</span>附件</label>
                 	<div class="kv-item-content file">
 						<span class="text"></span>
-                        <input type="file" />
+                        <input type="file" name="file"/>
                         <input type="button" class="button normal long2" value="浏览.." />
                     </div>
-                    <span class="kv-item-tip">标题字数限制在35个字符</span>
+
                 </div>
             </div>
             
-            <h2 class="subfild">
-            	<span>备注资料</span>
-            </h2>
+
             
             <div class="subfild-content remarkes-info">
             	<div class="kv-item ue-clear">
-                	<label><span class="impInfo">*</span>文章内容</label>
+                	<label><span class="impInfo">*</span>正文内容</label>
                 	<div class="kv-item-content">
                     	<textarea placeholder="文章内容" id="content" style="width:800px;height:240px;"></textarea>
                     </div>
                 </div>
             </div>
             
-            <div class="buttons">
-                <input class="button" type="button" value="确认修改" />
-            </div>
+            
+                <input type="button" value="确认发送" />&nbsp;&nbsp;&nbsp;<input type="button" value="定时发送" />&nbsp;&nbsp;&nbsp;<input type="button" value="存草稿" />&nbsp;&nbsp;&nbsp;<input type="button" value="关闭" />
+            </form>
         </div>
     </div>
+    
 </div>
 </body>
 <script type="text/javascript">
