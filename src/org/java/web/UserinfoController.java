@@ -1,9 +1,17 @@
 package org.java.web;
 
+import org.java.service.UserinfoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class UserinfoController {
-	//https://github.com/974569534/OA.git
+	
+	@Autowired
+	private UserinfoService userinfoService;
+	
+	public String show(){
+		return "";
+	}
 	
 }

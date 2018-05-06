@@ -1,11 +1,11 @@
-package org.java.dao;
+package org.java.service;
 
 import java.util.List;
 import java.util.Map;
 
 import org.java.entity.Departinfo;
 
-public interface DepartinfoMapper {
+public interface DepartinfoService {
 	/**删除（根据主键ID查询）**/
     int deleteByPrimaryKey(Integer departid);
 
@@ -29,4 +29,5 @@ public interface DepartinfoMapper {
     
     /**查询（数据总详情）**/
     List<Map<String, Object>> findAll2();
+
 }

@@ -114,4 +114,17 @@
       BranchId = #{branchid,jdbcType=INTEGER}
     where DepartId = #{departid,jdbcType=INTEGER}
   </update>
+  
+  <select id="findAll" resultMap="BaseResultMap">
+  	select 
+  	<include refid="Base_Column_List" />
+    from departinfo
+  </select>
+  
+  <select id="findAll2" resultType="m">
+	select 
+	DepartId, DepartName, UserId, ConnectTelNo, ConnectMobileTelNo, Faxes, BranchId,
+	(select Name from UserInfo where UserInfo.UserId=DepartInfo.UserId) Name
+	from DepartInfo
+  </select>
 </mapper>

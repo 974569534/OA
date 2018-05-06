@@ -36,7 +36,7 @@
                 	 <li class="office current">
                     	<div class="nav-header"><a href="javascript:;" date-src="home.jsp" class="ue-clear"><span>组织机构管理</span><i class="icon"></i></a></div>
                         <ul class="subnav">
-                        	<li><a href="javascript:;" date-src="info-mgt.jsp">部门管理</a></li>
+                        	<li><a href="javascript:;" date-src="info-depart.jsp" id="depart">部门管理</a></li>
                             <li><a href="javascript:;" date-src="info-reg.jsp">员工管理</a></li>
                         </ul>
                     
