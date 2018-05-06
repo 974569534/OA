@@ -1,4 +1,4 @@
-package org.java.dao;
+package org.java.service;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import org.apache.ibatis.annotations.Param;
 import org.java.entity.Paging;
 import org.java.entity.Userinfo;
 
-public interface UserinfoMapper {
+public interface UserinfoService {
+
 	/**删除（根据主键ID查询）**/
     int deleteByPrimaryKey(String userid);
     
@@ -30,6 +31,4 @@ public interface UserinfoMapper {
     
     /**查询（数据总详情，带分页）**/
     List<Userinfo> findAll(@Param("p") Paging p);
-    
-    
 }
